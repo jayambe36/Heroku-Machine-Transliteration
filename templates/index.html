@@ -1,0 +1,19 @@
+<html>
+	<body>
+		<center>
+			<h1> Machine Transliteration </h1>
+			<hr/>
+			<form action="http://127.0.0.1:5000/predict" method="post">
+				<input type="text" placeholder="English Sentence" name="eng"/>
+				<br/> <br/>
+				{% if predict %}
+				<hr />
+				<span style="color:red"> {{ predict }} </span>
+				<br/> <br/>
+				{% endif %}
+				
+				<input type="submit" value="Click me"/>
+			</form>
+		</center>
+	</body>
+</html>
